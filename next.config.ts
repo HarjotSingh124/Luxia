@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  experimental: {
+    turbo: false, // 🔴 force disable Turbopack
+  },
+  webpack: (config) => {
+    return config; // ensure webpack is used
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
