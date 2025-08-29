@@ -21,12 +21,12 @@ export const metadata = {
   description: "Luxury Rugs & Interiors",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({  }) {
   return (
     // add the variables class to html so the CSS vars are available
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-[#0a0a0a] text-lux-cream font-body">
-        {children}
+      
       </body>
     </html>
   );
